@@ -1,47 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario 5</title>
-    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>POSTULAR UN TRABAJO</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 </head>
+<body>
+    <br><br><br><br><br><br><br><br>
+ 
+    <!-- ajax contact form -->
+    <section style="margin-top: 50px;">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="card">
+                        <h5 class="card-header" style="background-color:#000000;color:white"> POSTULAR TRABAJO </h5>
+                        <div class="card-body">
+                            <form class="contact__form" method="post" action="mail.php">
+                                
+                                <!-- form message -->
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="alert alert-success contact__msg" style="display: none" role="alert">
+                                            Tu mensaje fue enviado exitosamente.
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end message -->
+ 
+                                <!-- form element  -->
+                                <!-- NOMBRE INPUT DIRECCION HORAS PAGA DESCRPCION SEXO  -->
+                                
+                                <div class="row">
+                                    
+                                    <div class="col-md-6 form-group">
+                                        <select class="form-control" name="Direccion" id="Direccion">
+                                            <option value="1">Seleccione empleo </option>
+                                            <option value="2">Barbero</option>
+                                            <option value="3">Camarero</option>
+                                            <option value="4">Cuidador mascotas</option>
+                                            <option value="5">Domiciliario</option>
+                                            <option value="6">Estilista</option>
+                                            <option value="7">Fotografo</option>
+                                            <option value="8">Salvavidas</option>
+                                            <option value="9">Lavanderia</option>
+                                            <option value="10">Manicurista</option>
+                                            <option value="11">Plomero</option>
+                                            <option value="12">Peluquero</option>
+                                            <option value="13">Paseadores</option>
+                                            <option value="14">Programador</option>
+                                            <option value="15">Recreacionista</option>
+                                            <option value="16">Tutor</option>
+                                            <option value="17">Trabajador domestico</option>
+                                            <option value="18">Vartender</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6 form-group">
+                                        <input name="email" type="email" class="form-control" placeholder="Direccion" required>
+                                    </div>
+                                    <div class="col-md-6 form-group">
+                                        <input name="phone" type="number" class="form-control" placeholder="Cantidad Horas" required>
+                                    </div>
+                                    <div class="col-md-6 form-group">
+                                        <input name="subject" type="number" class="form-control" placeholder="Remuneracion" required>
+                                    </div>
+                                    <div class="col-12 form-group">
+                                        <textarea name="message" class="form-control" rows="3" placeholder="Descripcion" required></textarea>
+                                    </div>
+                                    <div class="col-12 form-group">
+                                        <label for="Nombre">Sexo: </label><br>
+                                        <input type="radio" name="Sexo" id="masculino" value="masculino"> Masculino
+                                        <input type="radio" name="Sexo" id="femenino" value="femenino"> Femenino
+                                        <input type="radio" name="Sexo" id="ambos" value="ambos"> Ambos
 
-<body background="img/fondo.jpg">
-    <header>
-        <h1>FORMULARIO DE REGISTRO</h1>
-    </header>
-    <section>
-
-
-        <form>
-           
-
-           <div class="pregunta1"><label for="nombre">Nombre:</label> <input type="text" class="nombre" id="nombre" name="nombre"
-                    placeholder="nombre" required></div>
-            
-            <div class="pregunta2"><label for="apellido">Apellido:</label> <input type="text" class="apellido" id="apellido" name="apellido"
-                    placeholder="apellido" required></div>
-
-            <div class="pregunta3"><label for="telefono">Telefono:</label> <input type="number" min="10" max="10" class="telefono" id="telefono" name="telefono"
-                    placeholder="telefono" required></div>
-
-            <div class="pregunta4"><label for="direccion">Direccion:</label> <input type="text" class="direccion" id="direccion" name="direccion"
-                    placeholder="direccion" required></div>
-
-            <div class="pregunta5"><label for="edad">Edad:</label> <input type="number" class="edad" id="edad" name="edad"
-                    placeholder="edad" required></div>
-
-
-<div>
-                    <button>Enviar</button>
+                                    </div>
+                                    <div class="col-12">
+                                        <input name="submit" type="submit" class="btn btn-success" value="POSTULAR">
+                                    </div>
+                                    <div class="col-12">
+                                        <input name="submit" type="submit" class="btn btn-success" value="VOLVER">
+                                    </div>
+                                </div>
+                                <!-- end form element -->
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-        </form>
+        </div>
     </section>
-
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="main.js"></script>
 </body>
-
 </html>
