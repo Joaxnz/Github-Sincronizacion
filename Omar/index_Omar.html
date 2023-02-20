@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Style.css">
+    <title>Formulario</title>
+</head>
+<body>
+    <header>
+        <section>
+            <form action="ruta de envio" method="get">
+                <div>
+                    <label for="nombre"><p>Nombres: </p></label>
+                    <input type="text" class="nombre" placeholder="Digite sus nombres" pattern="[a-z A-Z]" title="NOMBRES BOBO HP" required>
+                </div>
+                
+                <div>
+                    <label for="apellido"><p>Apellidos: </p></label>
+                    <input type="text" class="apellido" placeholder="Digite sus apellidos" pattern="[a-z A-Z]" title="APELLIDOS IMBECIL" required>
+                </div>
+
+                <div>
+                    <label for="numero"><p>Numero de contacto: </p></label>
+                    <input type="number" placeholder="Digite su numero" min="0000000000" max="9999999999" step="0.1">                    
+                </div>
+
+                <div>
+                    <label for="correo"><p>Correo: </p></label>
+                    <input type="email" required placeholder="Digite su correo">
+                </div>
+                
+                <div>
+                    <br>
+                    <input type="submit" value="Enviar">
+                </div>
+            </form>
+        </section>
+    </header>
+</body>
+</html>
